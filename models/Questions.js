@@ -8,6 +8,6 @@ const questionsListSchema = new Schema({
 
 });
 
-const Que = mongoose.model('questions', questionsListSchema);
+const Questions = mongoose.model('Questions', questionsListSchema);
 
-module.exports = Que;
+module.exports = Questions;

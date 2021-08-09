@@ -1,6 +1,28 @@
+const mongoose = require('mongoose');
 const express = require('express');
-const router = express.Router();
-bodyParser = require('body-parser');
+const db = require('../index');
+const Questions = require('../models/Questions');
+
+const router = express.Router()
+
+console.log("in questions :)())))))")
+// router.route('/dashboard/questions').get((req, res) => {
+//     console.log("in questions.js");
+//     db.collection('questions').find().toArray()
+//         .then(docs => questions = console.log(docs))
+        
+//         .catch(err => res.status(400).json('Error: ' + err))
+// });
+
+router.get('/api/dashboard/questions', async (req, res) => {
+    console.log("hi")
+    console.log("req")
+})
+module.exports = router;
+    
+
+
+
 
 
 
